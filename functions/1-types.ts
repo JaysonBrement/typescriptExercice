@@ -97,7 +97,7 @@ type StringOrNumber = string | number
 /**
  * Reprenez la fonction fonction précédente et utilisez un alias en tant que type des paramètres.
  */
-export function addNumbersOrStringsAlias(a: string | number, b: string | number): number {
+export function addNumbersOrStringsAlias(a: StringOrNumber, b: StringOrNumber): number {
     return +a + +b;
 }
 
