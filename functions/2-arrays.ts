@@ -6,7 +6,7 @@
 export function getFirstNumber(array: number[]): number {
     if(typeof array[0] == undefined){
         return -1
-    }else
+    }
     return array[0];
 }
 

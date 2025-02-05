@@ -30,7 +30,8 @@ export function getFullName(firstName: string, lastName: string): string {
 /**
  * Fonction qui retourne la somme de deux nombres.
  */
-export function addNumbers(): void {
+export function addNumbers(a:number,b:number): number {
+ return a + b;
 }
 
 // ----------- PARAMETRES OPTIONNELS -----------
@@ -66,7 +67,7 @@ export function sumNumbers(a: number, b: number, c?:number): number {
 export function greetFullName(firstName: string, lastName: string, middleName?: string): string {
     if(middleName==undefined){
         return "Hello " + firstName + " "+ lastName;
-    }else
+    }
     return "Hello "+ firstName + " " +middleName + " " + lastName;
 }
 
@@ -119,7 +120,7 @@ export function fizzbuzz(a:number): string | number {
         return 'fizz';
     }else if(a%5 == 0){
         return 'buzz';
-    }else{
-        return a;
     }
+        return a;
+    
 }
